@@ -1,4 +1,6 @@
 import { Sequelize } from "sequelize";
+
+/* Creating a new instance of Sequelize and connecting to the database. */
 const database = new Sequelize(
   process.env.MYSQL_DATABASE,
   process.env.MYSQL_USER,
