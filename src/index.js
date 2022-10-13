@@ -4,6 +4,7 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import "dotenv/config";
+import database from "./config/db.config.js";
 
 /* This is creating a variable called app and setting it equal to express. This is also creating a
 variable called port and setting it equal to the environment variable PORT or 3000. */
@@ -21,10 +22,13 @@ app.get("/", (req, res) => {
 });
 
 /* This is a function that is listening for a port. */
-app.listen(port, () => {
+app.listen(port, async () => {
   try {
-    console.log(`Listening on port ${port}`);
+    await database.authenticate();
+    console.log(
+      `The connection has been successfully established on port  ${port}`
+    );
   } catch (err) {
-    console.log(err);
+    console.log("unexpected error \ns", err);
   }
 });
