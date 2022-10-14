@@ -185,7 +185,7 @@ Esta API tiene peticiones a las tablas de product y category
 - [Express](https://expressjs.com/) - Server Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment -[Sequelize](https://sequelize.org/) - ORM MySQL
 
-## Why did I use this technologies? <a name = "why_this"></a>
+## Por qué he utilizado estas tecnologías? <a name = "why_this"></a>
 
 <p style="font-weight: normal; font-size: 2.2vh"><b>Node.js:</b> Usé Node.js porque es mi tecnología principal para el Backend debido a que llevo mas tiempo desarrolando en JavaScript debido a la universidad, bootcamp y cursos en general, cabe aclarar que JavaScript es el lenguaje de programacion que mas domino.</p>
 
@@ -198,4 +198,5 @@ Esta API tiene peticiones a las tablas de product y category
 ## Database <a name = "base de datos"></a>
 
 <p style="font-weight: normal; font-size: 2.2vh">El administrador de base de datos es <b>MySQL</b> y fue proporcionado por BSale. Las tablas utilizadas son las siguientes</p>
+
  <img   src="https://i.imgur.com/esP9X0o.png" alt="tablas DB">
