@@ -14,6 +14,7 @@ module.exports = {
     'import/extensions': ['error', 'always', {
       ignorePackages: true,
       js: 'never',
+      'no-console': 'off',
     }],
   },
 

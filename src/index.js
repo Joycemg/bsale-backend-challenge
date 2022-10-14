@@ -32,10 +32,8 @@ app.use('*', (_req, res) => res.status(404).send('<h1>OPS! the endpoint does not
 app.listen(port, async () => {
   try {
     await database.authenticate();
-    console.log(
-      `The connection has been successfully established on port  ${port}`,
-    );
+    console.log(`The connection has been successfully established on port ${port}`);
   } catch (err) {
-    console.log('unexpected error \ns', err);
+    console.log('unexpected error \n', err);
   }
 });
