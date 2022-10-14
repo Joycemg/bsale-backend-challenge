@@ -9,13 +9,13 @@ export const getProduct = async (req, res) => {
   const { productByID } = req.params;
 
   try {
-    const oneProduct = await product.findAll({
+    const oneProduct = await product.findOne({
       attributes: {
         exclude: ['categoryId'],
       },
       where: { productId: productByID },
     });
-    return oneProduct.length > 0
+    return oneProduct
       ? res.status(200).send(oneProduct)
       : res.status(404).send('no product found :(');
   } catch (err) {
