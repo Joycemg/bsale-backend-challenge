@@ -26,7 +26,7 @@
 - [Por qué he utilizado estas tecnologías?](#why_this)
 - [Database](#database)
 
-##Acerca <a name = "about"></a>
+## Acerca <a name = "about"></a>
 
 Este endpoint fue desarrollado como parte del proceso de seleccion de BSale. El objetivo principal es determinar si tengo los conocimientos/habilidades para recuperar datos de una base de datos construyendo un backend (API REST) que interactúe con la base de datos proporcionada.
 
@@ -62,7 +62,7 @@ npm run dev - para ejecutar con nodemon -
 npm run start
 ```
 
-##Utilización <a name="usage"></a>
+## Utilización <a name="usage"></a>
 
 Esta API tiene peticiones a las tablas de product y category
 
