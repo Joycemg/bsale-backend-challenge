@@ -1,6 +1,10 @@
 import { Op } from "sequelize";
 import { product, category } from "../models/index.js";
 
+/**
+ * It gets a product by its ID
+ * @returns An array of product
+ */
 export const getProduct = async (req, res) => {
   const { productByID } = req.params;
 
@@ -19,10 +23,15 @@ export const getProduct = async (req, res) => {
   }
 };
 
+/**
+ * It gets all the products from the database and sends them to the client
+ * @returns The products are being returned.
+ */
 export const getProducts = async (req, res) => {
-  /* A pattern that is used to exclude the categoryId from the product model and include the category
-  model. */
   const patterns = {
+    /* A pattern that is used to exclude the categoryId from the product model and include the category
+    model. */
+
     attributes: {
       exclude: ["categoryId"],
     },

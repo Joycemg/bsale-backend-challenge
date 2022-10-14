@@ -2,6 +2,7 @@ import database from "../config/db.config.js";
 import category from "./category.model.js";
 import { DataTypes } from "sequelize";
 
+/* Defining the product model. */
 const product = database.define(
   "product",
   {

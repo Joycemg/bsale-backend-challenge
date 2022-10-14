@@ -6,7 +6,7 @@ import {
 
 const category_Router = Router();
 
-/* This is a router that is getting the category by ID and then getting the categories. */
+/* These are routers one gets the category by ID and the other all*/
 category_Router.get("/:categoryByID", productsByCategory);
 category_Router.get("/", getCategories);
 

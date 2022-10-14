@@ -1,6 +1,7 @@
 import database from "../config/db.config.js";
 import { DataTypes } from "sequelize";
 
+/* Defining the table structure. */
 const category = database.define(
   "category",
   {
