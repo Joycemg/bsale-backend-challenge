@@ -17,7 +17,7 @@
 
 ##### 📝 Table of Contents
 - [Acerca <a name = "about"></a>](#Acerca-)
-- [Cómo empezar <a name = "getting_started"></a>](#Cómo-empezar-)
+- [Cómo empezar <a name = "getting_started"></a>](#como-empezar-)
 - [Pasos finales <a name = "final-steps"></a>](#pasos-finales-)
 - [Utilización <a name = "usage"></a>](#Utilización-)
 - [Deployed <a name = "deployed"></a>](#deployed-)
