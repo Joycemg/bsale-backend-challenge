@@ -1,9 +1,9 @@
-import database from "../config/db.config.js";
-import { DataTypes } from "sequelize";
+import { DataTypes } from 'sequelize';
+import database from '../config/db.config.js';
 
 /* Defining the table structure. */
 const category = database.define(
-  "category",
+  'category',
   {
     id: {
       type: DataTypes.INTEGER,
@@ -12,7 +12,7 @@ const category = database.define(
     },
     name: { type: DataTypes.STRING },
   },
-  { tableName: "category", timestamps: false }
+  { tableName: 'category', timestamps: false },
 );
 
 export default category;

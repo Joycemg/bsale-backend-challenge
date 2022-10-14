@@ -1,13 +1,13 @@
-import database from "../config/db.config.js";
-import category from "./category.model.js";
-import { DataTypes } from "sequelize";
+import { DataTypes } from 'sequelize';
+import database from '../config/db.config.js';
+import category from './category.model.js';
 
 /* Defining the product model. */
 const product = database.define(
-  "product",
+  'product',
   {
     productId: {
-      field: "id",
+      field: 'id',
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true,
@@ -17,14 +17,14 @@ const product = database.define(
     price: { type: DataTypes.FLOAT },
     discount: { type: DataTypes.INTEGER },
     categoryId: {
-      field: "category",
+      field: 'category',
       type: DataTypes.INTEGER,
-      references: { model: category, key: "id" },
-      onUpdate: "CASCADE",
-      onDelete: "RESTRICT",
+      references: { model: category, key: 'id' },
+      onUpdate: 'CASCADE',
+      onDelete: 'RESTRICT',
     },
   },
-  { tableName: "product", timestamps: false }
+  { tableName: 'product', timestamps: false },
 );
 
 export default product;

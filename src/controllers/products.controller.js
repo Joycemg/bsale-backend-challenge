@@ -1,5 +1,5 @@
-import { Op } from "sequelize";
-import { product, category } from "../models/index.js";
+import { Op } from 'sequelize';
+import { product, category } from '../models/index.js';
 
 /**
  * It gets a product by its ID
@@ -11,15 +11,15 @@ export const getProduct = async (req, res) => {
   try {
     const oneProduct = await product.findAll({
       attributes: {
-        exclude: ["categoryId"],
+        exclude: ['categoryId'],
       },
       where: { productId: productByID },
     });
     return oneProduct.length > 0
       ? res.status(200).send(oneProduct)
-      : res.status(404).send("no product found :(");
+      : res.status(404).send('no product found :(');
   } catch (err) {
-    res.status(400).send(err);
+    return res.status(400).send(err);
   }
 };
 
@@ -29,11 +29,10 @@ export const getProduct = async (req, res) => {
  */
 export const getProducts = async (req, res) => {
   const patterns = {
-    /* A pattern that is used to exclude the categoryId from the product model and include the category
-    model. */
+    /* A pattern that is used to exclude the categoryId from the product model */
 
     attributes: {
-      exclude: ["categoryId"],
+      exclude: ['categoryId'],
     },
     include: [
       {
@@ -46,20 +45,18 @@ export const getProducts = async (req, res) => {
   const { search } = req.query;
   try {
     if (search) {
-      {
-        const productFound = await product.findAll({
-          ...patterns,
-          where: { name: { [Op.like]: `%${search}%` } },
-        });
-        return productFound.length > 0
-          ? res.status(200).send(productFound)
-          : res.status(404).send("no product found :(");
-      }
+      const productFound = await product.findAll({
+        ...patterns,
+        where: { name: { [Op.like]: `%${search}%` } },
+      });
+      return productFound.length > 0
+        ? res.status(200).send(productFound)
+        : res.status(404).send('no product found :(');
     }
 
     const products = await product.findAll(patterns);
-    res.status(200).send(products);
+    return res.status(200).send(products);
   } catch (err) {
-    res.status(400).send(err);
+    return res.status(400).send(err);
   }
 };
