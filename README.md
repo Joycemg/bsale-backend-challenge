@@ -28,7 +28,7 @@
 
 Este endpoint fue desarrollado como parte del proceso de seleccion de BSale. El objetivo principal es determinar si tengo los conocimientos/habilidades para recuperar datos de una base de datos construyendo un backend (API REST) que interactúe con la base de datos proporcionada.
 
-## Cómo empezar<a name = "getting_started"></a>
+## Como empezar<a name = "getting_started"></a>
 
 Para empezar, tendrás que clonar el repositorio e instalar las dependencias.
 
