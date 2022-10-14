@@ -16,8 +16,10 @@
 </p>
 
 ##### 📝 Table of Contents
-
+- [Acerca <a name = "about"></a>](#Acerca-)
+- [Cómo empezar <a name = "getting_started"></a>](#Cómo empezar-)
 - [Pasos finales <a name = "final-steps"></a>](#pasos-finales-)
+- [Utilización <a name = "usage"></a>](#Utilización-)
 - [Deployed <a name = "deployed"></a>](#deployed-)
 - [Por qué he utilizado estas tecnologías? <a name = "why_this"></a>](#por-qué-he-utilizado-estas-tecnologías-)
 - [Database <a name = "base de datos"></a>](#database-)
@@ -26,7 +28,7 @@
 
 Este endpoint fue desarrollado como parte del proceso de seleccion de BSale. El objetivo principal es determinar si tengo los conocimientos/habilidades para recuperar datos de una base de datos construyendo un backend (API REST) que interactúe con la base de datos proporcionada.
 
-##Cómo empezar<a name = "getting_started"></a>
+## Cómo empezar<a name = "getting_started"></a>
 
 Para empezar, tendrás que clonar el repositorio e instalar las dependencias.
 
