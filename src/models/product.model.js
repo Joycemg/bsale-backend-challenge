@@ -5,7 +5,8 @@ import { DataTypes } from "sequelize";
 const product = database.define(
   "product",
   {
-    id: {
+    productId: {
+      field: "id",
       type: DataTypes.INTEGER,
       autoIncrement: true,
       primaryKey: true,
