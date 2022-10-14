@@ -22,7 +22,7 @@
 - [Por qué he utilizado estas tecnologías? <a name = "why_this"></a>](#por-qué-he-utilizado-estas-tecnologías-)
 - [Database <a name = "base de datos"></a>](#database-)
 
-##Acerca <a name = "about"></a>
+## Acerca <a name = "about"></a>
 
 Este endpoint fue desarrollado como parte del proceso de seleccion de BSale. El objetivo principal es determinar si tengo los conocimientos/habilidades para recuperar datos de una base de datos construyendo un backend (API REST) que interactúe con la base de datos proporcionada.
 
@@ -31,7 +31,7 @@ Este endpoint fue desarrollado como parte del proceso de seleccion de BSale. El 
 Para empezar, tendrás que clonar el repositorio e instalar las dependencias.
 
 ```
-git@github.com:Joycemg/bsale-backend-challenge.git
+git clone git@github.com:Joycemg/bsale-backend-challenge.git
 ```
 
 ```
@@ -58,7 +58,7 @@ npm run dev - para ejecutar con nodemon -
 npm run start
 ```
 
-##Utilización <a name="usage"></a>
+## Utilización <a name="usage"></a>
 
 Esta API tiene peticiones a las tablas de product y category
 
