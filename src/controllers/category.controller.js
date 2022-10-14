@@ -16,8 +16,6 @@ export const getCategories = async (req, res) => {
 
 /**
  * It finds all products that have a category that matches the categoryByID parameter in the request
- * @param req - the request object
- * @param res - the response object
  * @returns An array of products that match the category ID
  */
 export const productsByCategory = async (req, res) => {
