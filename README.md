@@ -83,7 +83,7 @@ Esta API tiene peticiones a las tablas de product y category
     "discount": 0,
     "category": { "id": 1, "name": "bebida energetica" }
   },
- {
+  {
     "productId": 13,
     "name": "PISCO CAMPANARIO 40º",
     "url_image": "https://dojiw2m9tvv09.cloudfront.net/11132/product/campanario408881.jpg",
@@ -97,7 +97,7 @@ Esta API tiene peticiones a las tablas de product y category
 
 ```JSON
 [
-{
+  {
     "productId": 52,
     "name": "Fanta",
     "url_image": "https://dojiw2m9tvv09.cloudfront.net/11132/product/fanta_2lt5236.jpg",
@@ -113,9 +113,9 @@ Esta API tiene peticiones a las tablas de product y category
 
 <p style="font-weight: normal; font-size: 1.2vh">ejemplo : API/products?search=RON PAMPERO</p>
 
-```
+```JSON
 [
-     {
+  {
     "productId": 32,
     "name": "RON PAMPERO",
     "url_image": "https://dojiw2m9tvv09.cloudfront.net/11132/product/pampero-especial0296.jpg",
@@ -142,7 +142,7 @@ Esta API tiene peticiones a las tablas de product y category
 </br>
 <p style="font-weight: normal; font-size: 2.2vh">Todas las categorias = /API/category/</p>
 
-```
+```JSON
 [
   { "id": 1, "name": "bebida energetica" },
   { "id": 2, "name": "pisco" },
@@ -157,7 +157,7 @@ Esta API tiene peticiones a las tablas de product y category
 
 <p style="font-weight: normal; font-size: 2.2vh">Todos los productos por categoria = /API/category/:id//</p>
 
-```
+```JSON
 [
   {
     "productId": 98,
@@ -174,7 +174,6 @@ Esta API tiene peticiones a las tablas de product y category
     "discount": 0
   }
 ]
-
 ```
 
 ## Deployed <a name = "deployed"></a>
