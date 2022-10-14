@@ -1,6 +1,8 @@
+import database from "../config/db.config.js";
+import category from "./category.model.js";
 import { DataTypes } from "sequelize";
 
-const product = db.define(
+const product = database.define(
   "product",
   {
     id: {
@@ -12,7 +14,13 @@ const product = db.define(
     url_image: { type: DataTypes.STRING },
     price: { type: DataTypes.FLOAT },
     discount: { type: DataTypes.INTEGER },
-    category: { type: DataTypes.INTEGER },
+    categoryId: {
+      field: "category",
+      type: DataTypes.INTEGER,
+      references: { model: category, key: "id" },
+      onUpdate: "CASCADE",
+      onDelete: "RESTRICT",
+    },
   },
   { tableName: "product", timestamps: false }
 );

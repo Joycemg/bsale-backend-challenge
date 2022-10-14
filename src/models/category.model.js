@@ -1,7 +1,8 @@
+import database from "../config/db.config.js";
 import { DataTypes } from "sequelize";
 
-const category = db.define(
-  "category ",
+const category = database.define(
+  "category",
   {
     id: {
       type: DataTypes.INTEGER,
