@@ -35,7 +35,7 @@ Este endpoint fue desarrollado como parte del proceso de seleccion de BSale. El 
 Para empezar, tendrás que clonar el repositorio e instalar las dependencias.
 
 ```
-git@github.com:Joycemg/bsale-backend-challenge.git
+git clone git@github.com:Joycemg/bsale-backend-challenge.git
 ```
 
 ```
